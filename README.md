@@ -10,7 +10,7 @@ weex 学习demo
 ```
 
 # snapshot
-  ![-w200](./gitsource/1.png)
+  ![-w200](./gitsource/1.png =200x)
 
 
 
