@@ -43,7 +43,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.reloadBtn];
+//    [self.view addSubview:self.reloadBtn];
+    [self relaodWeView];
 }
 
 - (void)relaodWeView {
@@ -65,7 +66,6 @@
     
     __weak typeof(self) wSelf = self;
     _instance.onCreate = ^(UIView *view) {
-        view.backgroundColor = [UIColor redColor];
         //        [view removeFromSuperview];
         [wSelf.view addSubview:view];
         [wSelf.view bringSubviewToFront:wSelf.reloadBtn];
